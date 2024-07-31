@@ -1,27 +1,31 @@
 # Udemy_Py_TensorRT
 
-### This readme file contains pre-repositories that will have their separate README file for detail explanations
+ONNX: ONNX (Open Neural Network Exchange) is an open format built to represent machine learning models. It enables models to be transferred between different frameworks, which can facilitate deployment in various environments. Allows models to be trained in one framework (like PyTorch) and then transferred to another framework (like TensorFlow or Caffe2) for inference.
 
+ONNX is designed for model interoperability and runtime and not for training
 
-#### Following Repository provide implementation for both onnx and tensorrt python api inference.
+TENSORRT: high-performance deep learning inference library developed by NVIDIA. It is specifically designed to optimize and deploy neural network models on NVIDIA GPUs. Provides various optimizations such as layer fusion, precision calibration (FP16 and INT8), and kernel auto-tuning to maximize inference performance on NVIDIA GPUs.
 
-Resnet 18 pretrained model either for onnx and tensorrt
+Triton Server: open-source inference serving software designed to simplify the deployment of AI models at scale. It provides a flexible and efficient solution for running inference on models from various frameworks, supporting multiple backends, and optimizing for different hardware platforms.
 
-YoloV4 pretrained Darketn with Onnx Python Inference
+Docker: https://github.com/Leanse1/Docker/tree/main/docker
+install docker in VM: sudo apt install docker.io
+                      sudo usermod -aG docker $USER
+                      sudo groupadd docker
+                      sudo gpasswd -a $USER docker
+                      sudo systemctl restart docker
+                      sudo systemctl status docker
 
-YoloV5 pretrained object detection model with Python Inference and Onnx API
+install docker cuda toolkit: chap 22,23,24,25
+install docker tensorflow: chap 26
 
-Onnx-Inference-Yolov5 contains Tensorrt 8.5.1 Python Inference 
+Nvidia Driver: To have proper connection b/w nvidia graphics card(rtx) and windows os.
+to install nvidia driver on VM: https://www.youtube.com/watch?v=pmGfi1ldBqc
 
-YoloV5 Video Inference describes how to implement fast inference on video frames with tensorrt library! 
+CUDA:  CUDA library is specialized for GPU-based parallelism and large-scale data operations, 
+    similar to multithreading which is suited for CPU-based concurrent execution and managing tasks within the same memory space.
 
-YoloV8 folder in fact will explain how to make an fast inference on images and video frames with ONNX Dynamic API
+    workflow: pytorch call C++; C++ call cuda;
+    C++ acts as bridge b/w both
 
-Yolo P model describes implementation for ONNX API infefrence on which cars camera deteect cars around it, as well as renders instance segmentation for highway.
-
-YoloV7 Inference with ONNX Model based on batch of images as well as video frame inference
-
-Deep Reinforcement Learning Applications such as Frozen Lake, Card Playing, Lunar Lader !
-
-Bonus Lecture: Deep Q Reinforcement Learning Policy with GYM Library!
-```
+Hardware(Cpu,gpu,processor) >> Kernel (Linux, windows) >>> User (Libraries, cuda toolkit) 
