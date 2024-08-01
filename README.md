@@ -33,6 +33,8 @@ conigure vscode with docker: chap 39
 downlooad resnet model: pip install onnx
                         https://github.com/Leanse1/Udemy_Py_TensorRT/blob/main/Resnet18/inference_resnet18_tensorrt.py
 
+convert onnx to tensorrt: https://github.com/Leanse1/Udemy_Py_TensorRT/blob/main/Resnet18/convert_onnx_to_engineresnet.py  (chap 44)
+
 Nvidia Driver: To have proper connection b/w nvidia graphics card(rtx) and windows os.
 to install nvidia driver on VM: https://www.youtube.com/watch?v=pmGfi1ldBqc
 
