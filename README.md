@@ -24,7 +24,8 @@ install docker in VM: sudo apt install docker.io
 
 install docker cuda toolkit: chap 22,23,24,25
 install docker tensorflow: chap 26,27,28
-install git, yolo, tensorrt chap 29,30
+install docker git, yolo, tensorrt chap 29,30
+conigure vscode with docker: chap 39
 
 Nvidia Driver: To have proper connection b/w nvidia graphics card(rtx) and windows os.
 to install nvidia driver on VM: https://www.youtube.com/watch?v=pmGfi1ldBqc
