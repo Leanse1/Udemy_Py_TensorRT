@@ -23,9 +23,15 @@ install docker in VM: sudo apt install docker.io
                       sudo systemctl status docker
 
 install docker cuda toolkit: chap 22,23,24,25
+
 install docker tensorflow: chap 26,27,28
+
 install docker git, yolo, tensorrt chap 29,30
+
 conigure vscode with docker: chap 39
+
+downlooad resnet model: pip install onnx
+                        https://github.com/Leanse1/Udemy_Py_TensorRT/blob/main/Resnet18/inference_resnet18_tensorrt.py
 
 Nvidia Driver: To have proper connection b/w nvidia graphics card(rtx) and windows os.
 to install nvidia driver on VM: https://www.youtube.com/watch?v=pmGfi1ldBqc
