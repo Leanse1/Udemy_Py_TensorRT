@@ -125,3 +125,13 @@ The reduction process within a warp is unrolled, utilizing warp-level primitives
 
 Reduction with Complete Unrolling: lec 30
 The entire reduction loop is fully unrolled, eliminating all loops and synchronization steps, allowing for maximum performance at the cost of increased code complexity.
+
+complete unrolling is the best of all parallel reduction alorithm
+
+//DYNAMIC PARALLELISM - lec 32,33
+ALLOWS NEW GPU KERNEL TO BE CREATED AND SYNCHRONISED DIRECTLY ON GPU INSTEAD OF CPU
+    in dynamic parallelism, grids are divided into two types a) parent grid b) child grid
+    parent and child grids share the same global and constant memory but distinct local and shared memory
+
+parent block will be launched from host with one thread block havin 16 threads.
+in each grid first thread block will launch child grid which has half the elements in parent grid
